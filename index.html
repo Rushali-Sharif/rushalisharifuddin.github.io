@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rushali Sharif Uddin - Portfolio</title>
+
+  <!-- Fonts (system-ui fallback but let's upgrade slightly) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- ====== NAVIGATION ====== -->
+  <nav id="desktop-nav" class="site-nav">
+    <div class="logo">Rushali Sharif Uddin</div>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="#profile">About</a></li>
+      <li><a class="nav-link" href="#education">Education</a></li>
+      <li><a class="nav-link" href="#experience">Experience</a></li>
+      <li><a class="nav-link" href="#publications">Publications</a></li>
+      <li><a class="nav-link" href="#research-experience">Research</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav" class="site-nav">
+    <div class="logo">Rushali Sharif Uddin</div>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" id="hamburger-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-links" id="mobile-menu">
+        <li><a class="nav-link" href="#profile">About</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#publications">Publications</a></li>
+        <li><a class="nav-link" href="#research-experience">Research</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== HERO / PROFILE ====== -->
+  <header id="profile" class="hero">
+    <div class="section__pic-container">
+      <img src="./assets/me.jpg" alt="Portrait of Rushali Sharif Uddin" />
+    </div>
+
+    <div class="section__text">
+      <p class="hero-intro">
+        Hello! I'm <strong>Rushali Sharif Uddin</strong>, a Computer Science researcher working at the intersection of
+        <strong>Machine Learning</strong>, <strong>Computer Vision</strong>,
+        <strong>Neuro-Inspired AI</strong>, and <strong>Multi-modal Intelligence</strong> for adaptive, generalizable,
+        and lifelong visual understanding.
+      </p>
+
+      <p class="hero-intro">
+        I am currently a Research Collaborator at
+        <a class="hero-link" href="https://elitelab.ai/" target="_blank" rel="noopener noreferrer">
+          ELITE Research Lab
+        </a>.
+        Previously, I served as a Lecturer in the Department of Computer Science and Engineering at
+        <a class="hero-link" href="https://www.uiu.ac.bd/" target="_blank" rel="noopener noreferrer">
+          United International University
+        </a>, Bangladesh, and as a Research Engineer at
+        <a class="hero-link" href="https://www.aimsl.uiu.ac.bd/" target="_blank" rel="noopener noreferrer">
+          Advanced Intelligent Multidisciplinary Systems (AIMS) Lab
+        </a>.
+      </p>
+
+      <div id="socials-container" class="social-links">
+        <a class="social-button" href="https://www.linkedin.com/in/rushali-uddin/" target="_blank" aria-label="LinkedIn">
+          <img src="./assets/linkedin.png" alt="" class="icon" />
+        </a>
+        <a class="social-button" href="https://github.com/RushaliUddin" target="_blank" aria-label="GitHub">
+          <img src="./assets/github.png" alt="" class="icon" />
+        </a>
+        <a class="social-button" href="https://scholar.google.com/citations?user=XXXXXXX" target="_blank"
+          aria-label="Google Scholar">
+          <img src="./assets/gs4.png" alt="" class="icon" />
+        </a>
+        <a class="social-button" href="mailto:rushali@example.com" aria-label="Email">
+          <img src="./assets/email.png" alt="" class="icon" />
+        </a>
+        <a class="social-button" href="./assets/Rushali_Sharif_Uddin_CV.pdf" target="_blank" aria-label="CV">
+          <img src="./assets/cv3.png" alt="" class="icon" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== RESEARCH INTERESTS ====== -->
+  <section id="research-interests" class="section-wrapper">
+    <h2 class="section-title">Research Interests</h2>
+
+    <div class="card card-outer">
+      <div class="card-inner">
+        <p class="body-text">
+          I am interested in building visual intelligence systems that do more than recognize objects — systems
+          that actively construct their own understanding of the world. I call this direction Autopoietic Visual
+          Intelligence: visual models that can integrate signals from multiple modalities (vision, depth, motion,
+          language, sound), build internal memory of experience, and continuously refine what they consider
+          meaningful without relying on fixed human ontologies or dense human supervision.
+        </p>
+        <p class="body-text">
+          The goal is to move from passive perception (“this matches a known label”) to self-evolving interpretation
+          (“this is a structure I have discovered, tracked, and assigned significance to”). A key motivation is that
+          in many real environments — underwater, clinical, field robotics, low-resource regions — we simply do not
+          have clean labels, stable lighting, or abundant compute.
+        </p>
+        <p class="body-text">
+          Instead of depending on large annotated datasets, these systems must learn from weak cues, temporal
+          continuity, cross-modal agreement, and self-generated hypotheses. This involves enabling models to adapt
+          in open, shifting conditions with minimal supervision; giving them structured memory so they can revisit
+          and reinterpret past experience; letting them imagine counterfactuals to test their own beliefs; and
+          pushing them to explain and reuse their internally formed concepts.
+        </p>
+        <p class="body-text">
+          Ultimately, this asks whether an artificial visual system can develop its own semantics, its own
+          priorities, and its own way of seeing — and whether that kind of self-constructed perception is the path
+          to reliable, controllable AI that works where labels, power, and infrastructure are scarce.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education" class="section-wrapper">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card card-outer">
+      <div class="card-inner">
+        <h3 class="card-heading">United International University</h3>
+        <p class="meta-line">
+          Bachelor of Science, Computer Science and Engineering (Major in Data Science) · Jan 2020 – Jun 2024
+        </p>
+        <p class="body-text">
+          CGPA: 3.91/4.00 (Summa Cum Laude)
+          <a class="inline-link" href="#" target="_blank" rel="noopener noreferrer">[Transcript]</a>
+          <a class="inline-link" href="#" target="_blank" rel="noopener noreferrer">[Provisional Certificate]</a><br />
+          Major CGPA: 4.00/4.00
+        </p>
+        <p class="body-text">
+          Thesis: Domain-Agnostic Underwater Vision Framework: Integrating Unpaired Image Enhancement,
+          CutLER-based Localization, and Custom Classification
+        </p>
+        <p class="body-text">
+          Supervisor:
+          <a class="inline-link" href="https://ece.northsouth.edu/people/dr-salekul-islam/" target="_blank"
+            rel="noopener noreferrer">Dr. Salekul Islam</a><br />
+          Co-supervisor:
+          <a class="inline-link" href="https://cse.sds.bracu.ac.bd/faculty_profile/333/dr_swakkhar_shatabda"
+            target="_blank" rel="noopener noreferrer">Dr. Swakkhar Shatabda</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience" class="section-wrapper">
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="card-stack">
+
+      <article class="card card-outer">
+        <div class="entry-header">
+          <h3 class="card-heading">ELITE Research Lab</h3>
+          <p class="meta-line">Research Collaborator · Jul 2025 – Present</p>
+        </div>
+        <div class="card-inner">
+          <ul class="bullet-list">
+            <li>
+              Developing a Universal Medical Representation Learning (UMRL) framework that integrates multi-modal
+              data (X-ray, ultrasound, CT, MRI, and histopathology) into a shared embedding space for cross-disease
+              reasoning and downstream tasks such as diagnosis, segmentation, and retrieval. The system aims to
+              build a clinically grounded foundation model aligned with medical ontologies to enable generalizable,
+              patient-centric decision support.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card-outer">
+        <div class="entry-header">
+          <h3 class="card-heading">
+            Advanced Intelligent Multidisciplinary Systems Lab, Institute of Research, Innovation,
+            Incubation & Commercialization
+          </h3>
+          <p class="meta-line">Research Engineer · Apr 2025 – Jun 2025</p>
+        </div>
+        <div class="card-inner">
+          <ul class="bullet-list">
+            <li>
+              Contributed to the design of a cloud-based digital
+              <a class="inline-link" href="https://elitelab.ai/" target="_blank" rel="noopener noreferrer">
+              National Cancer Registry (NCR)</a>
+              to centralize cancer incidence reporting across Bangladesh.
+            </li>
+            <li>
+              Mapped and structured cancer classification data according to ICD-O and AJCC standards; analyzed
+              geographic and demographic patterns for public health planning.
+            </li>
+            <li>
+              Helped design and validate a culturally adapted breast cancer risk model
+              (<a class="inline-link" href="https://elitelab.ai/" target="_blank" rel="noopener noreferrer">
+              CanAware</a>)
+              using non-invasive questionnaire-based input.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card-outer">
+        <div class="entry-header">
+          <h3 class="card-heading">
+            Department of Computer Science and Engineering, United International University
+          </h3>
+          <p class="meta-line">Lecturer · Jun 2024 – Oct 2024</p>
+        </div>
+        <div class="card-inner">
+          <ul class="bullet-list">
+            <li>Delivered lectures for core Computer Science courses.</li>
+            <li>Reviewed research papers; identified 6 papers with significant publication potential.</li>
+            <li>Supervised 12 teams for a project competition.</li>
+            <li>Served as a faculty judge for Project Showcase Summer 2024.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card-outer">
+        <div class="entry-header">
+          <h3 class="card-heading">
+            Department of Computer Science and Engineering, United International University
+          </h3>
+          <p class="meta-line">Undergraduate Teaching Assistant · Oct 2022 – May 2024</p>
+        </div>
+        <div class="card-inner">
+          <ul class="bullet-list">
+            <li>Led review sessions to reinforce understanding of coursework materials.</li>
+            <li>Guided lab projects and provided project feedback.</li>
+            <li>Supervised 12 teams in competition settings.</li>
+            <li>Resolved academic queries and supported course delivery.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ====== PUBLICATIONS ====== -->
+  <section id="publications" class="section-wrapper">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="card-stack">
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/cl.png" alt="Energy Optimization for Edge Computing cover image" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Cross-Layer Architecture for Energy Optimization of Edge Computing
+            </h3>
+            <p class="entry-meta">
+              International Conference on Machine Intelligence and Emerging Technologies
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Designed a cross-layer energy optimization framework for edge computing across device, network, and cloud.</li>
+              <li>Implemented DVFS, Zn-Ni batteries, and heterogeneous processors (CPU, GPU, FPGA, TPU).</li>
+              <li>Developed predictive resource allocation models using Affinity Propagation and Virtual Network Embedding.</li>
+              <li>Achieved up to 50% cumulative energy savings via mathematical modeling and simulation in Python.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid"
+              href="https://link.springer.com/chapter/10.1007/978-3-031-34622-4_54"
+              target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-ghost"
+              href="https://link.springer.com/chapter/10.1007/978-3-031-34622-4_54"
+              target="_blank" rel="noopener noreferrer">Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/Dataset Pipeline.drawio (1).png" alt="iSea dataset illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              iSea: A Domain-Agnostic Dataset for Image Enhancement, Classification,
+              Detection and Segmentation of Subaqueous Specimens
+            </h3>
+            <p class="entry-meta">
+              Scientific Data (Nature Research). Impact Factor: 6.9 · Cite Score: 8.4 · Q1
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Introduced iSea, a domain-agnostic underwater dataset for enhancement, classification, detection, and segmentation.</li>
+              <li>85,093 images across underwater scenes, marine life, wreckage, and debris; 35 classes labeled from CutLER proposals and validated by authors using Roboflow.</li>
+              <li>Generated instance and binary masks via CutLER and OpenCV; applied FUnIE-GAN for enhancement.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid" href="./assets/nature.pdf" target="_blank" rel="noopener noreferrer">
+              Preprint
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/RushaliUddin/Temporal-Zero-Shot"
+              target="_blank" rel="noopener noreferrer">
+              Under Review
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== RESEARCH EXPERIENCE ====== -->
+  <section id="research-experience" class="section-wrapper">
+    <h2 class="section-title">Research Experience</h2>
+
+    <div class="card-stack">
+
+      <!-- Thesis -->
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/detection.jpg" alt="Underwater vision framework illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Domain-Agnostic Underwater Vision Framework: Integrating Unpaired Image Enhancement,
+              CutLER-based Localization, and Custom Classification
+            </h3>
+            <p class="entry-meta">Undergraduate Thesis</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Proposed a domain-agnostic dataset for classification, enhancement, detection, and segmentation in diverse underwater environments by manually annotating 15,069 images.</li>
+              <li>Designed an unpaired underwater enhancement model with feature extraction, blind denoising, and deblurring modules.</li>
+              <li>Developed CutLER-based localization and a custom classifier optimized for near real-time inference.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid" href="./assets/thesis.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="btn btn-ghost" href="https://memcl-demo.vercel.app/" target="_blank" rel="noopener noreferrer">Poster</a>
+            <span class="status-chip status-done">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OW Few-Shot -->
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ongoing.png" alt="Few-shot segmentation illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Open-World Few-Shot Segmentation Under Domain Shifts</h3>
+            <p class="entry-meta">
+              Frequency-Aware Matching · Multi-Mask Decoder · Cross-Domain Robustness
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Proposes an open-world extension to few-shot segmentation that segments all objects (known + unknown) in a query image, even across domains.</li>
+              <li>Introduces a Frequency-Aware Matching (FAM) module and a lightweight multi-mask decoder for better generalization without full retraining.</li>
+              <li>Evaluates on FSS-1000 and additional cross-domain datasets for robustness to texture/appearance shift.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <span class="status-chip status-wip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lifelong Open-World Detection -->
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ongoing.png" alt="Memory-augmented detection system illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Lifelong Open-World Object Detection with Modular Memory-Augmented Reasoning
+            </h3>
+            <p class="entry-meta">
+              Detectron2 · CLIP · CVAE Replay · Procedural Memory
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Building a system that flags unseen objects, adapts under domain shift, and learns new classes without catastrophic forgetting.</li>
+              <li>Combines Detectron2 region proposals with CLIP-driven Semantic/Sensory Memory and a calibrated UnknownHead for routing "known vs unknown."</li>
+              <li>Uses CVAE-based generative replay and Procedural Memory policies to preserve behavior over incremental updates.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <span class="status-chip status-wip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lifelong 3D -->
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ongoing.png" alt="3D scene understanding illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Towards Lifelong 3D Perception</h3>
+            <p class="entry-meta">
+              Tri-Modal Vision–Language–Geometry · Hierarchical + Generative Memory
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Designing a tri-modal (image–text–geometry) framework for open-vocabulary, continual 3D scene understanding without dense 3D semantic labels.</li>
+              <li>Aligning CLIP-style vision–language features with 3D geometry using pair-free alignment and multi-view distillation.</li>
+              <li>Exploring hierarchical memory and generative replay to reduce forgetting as new scenes and categories appear.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <span class="status-chip status-wip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- UniScene -->
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ongoing.png" alt="Unified 2D/3D/video model illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">UniScene: Universal Scene Representation Across 2D, 3D, and Video</h3>
+            <p class="entry-meta">
+              Single-GPU Training · Unified Latent Space · Cross-Task/Modal Transfer
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Learning one modality-agnostic latent space across RGB, depth, point clouds, and video to replace multiple task-specific networks.</li>
+              <li>Using a four-stage curriculum and dataset-agnostic label slicing to reconcile taxonomies like COCO / ADE / KITTI and reduce ontology mismatch.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <span class="status-chip status-wip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colposcopy Workflow -->
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ongoing.png" alt="Colposcopy workflow AI pipeline illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Structured Digitalization of the Colposcopy Workflow</h3>
+            <p class="entry-meta">
+              Process-Aware Transformer · Clinical Decision Support
+            </p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Designing a process-aware transformer that integrates visual, temporal, and clinical reasoning across saline / acetic acid / iodine imaging stages to automate lesion interpretation and assist cervical cancer screening.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <span class="status-chip status-wip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== COURSE-BASED RESEARCH ====== -->
+  <section id="course-research" class="section-wrapper">
+    <h2 class="section-title">Course-Based Research</h2>
+
+    <div class="card-stack">
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/dip.png" alt="Grapevine leaf disease classification model illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Exploring ConvNeXt Family using Grapevine Leaves Dataset of ESCA Disease
+            </h3>
+            <p class="entry-meta">Digital Image Processing · Grade: A</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Implemented ConvNeXt variants for early ESCA disease detection in grapevine leaves, achieving 99.64% accuracy with ConvNeXt-Large.</li>
+              <li>Applied transfer learning, augmentation, and modular CNN design to outperform VGG-16, ResNet-50, and EfficientNet on core metrics.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid" href="#" target="_blank" rel="noopener noreferrer">Report</a>
+            <span class="status-chip status-done">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/hci.png" alt="Gender equity system prototype illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Promoting Gender Equity in Bangladesh: Inclusive System Prototype to Eliminate Bias
+            </h3>
+            <p class="entry-meta">Human-Computer Interaction · Grade: A</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Surveyed bias in healthcare, education, and employment in Bangladesh; proposed a system structured around Equity, Access, Representation, and Respect.</li>
+              <li>Outlined interventions for policy reform, awareness, inclusive representation, and community collaboration, including LGBTQIA+ visibility.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid" href="#" target="_blank" rel="noopener noreferrer">Report</a>
+            <span class="status-chip status-done">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/bioinfo.png" alt="Gene expression analysis illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Differentially Expressed Gene Analysis of Down Syndrome and Dataset Preparation for Neural Network
+            </h3>
+            <p class="entry-meta">Bioinformatics · Grade: A</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Used GSE5390 dataset (Down Syndrome vs. control brain tissues); performed background correction, normalization, and gene annotation.</li>
+              <li>Ran differential expression analysis with GEO2R; produced volcano plots, UMAP, and variance trends to identify significant DEGs.</li>
+              <li>Ranked genes (p ≤ 0.05) and prepared supervised learning inputs for neural network modeling toward personalized therapy strategies.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid" href="#" target="_blank" rel="noopener noreferrer">Report</a>
+            <span class="status-chip status-done">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ml.png" alt="Cervical cancer captioning model illustration" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Provisional Diagnosis of Cervical Cancer Using Image Captioning
+            </h3>
+            <p class="entry-meta">Machine Learning · Grade: A</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Built a VGG16 + LSTM encoder–decoder pipeline to generate diagnostic captions from colposcopic images, achieving BLEU = 0.51.</li>
+              <li>Preprocessed IARC Cervical Cancer Image Bank data and aligned imaging findings with textual descriptions; engineered robustness to clinical noise.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid" href="#" target="_blank" rel="noopener noreferrer">Report</a>
+            <span class="status-chip status-done">Completed</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section-wrapper">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-stack">
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/dbms.png" alt="Realtime Reporting System interface mockup" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Realtime Reporting System</h3>
+            <p class="entry-meta">Systems · Data Pipeline</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Built a full-stack platform (HTML/CSS/Bootstrap/JS/PHP/MySQL) for tagged posts, media sharing, and discussion.</li>
+              <li>Implemented user profiles and a live crime-density view for situational awareness.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid"
+              href="https://github.com/RushaliUddin/Smart-Traffic-Monitoring"
+              target="_blank" rel="noopener noreferrer">Report</a>
+            <a class="btn btn-ghost"
+              href="https://github.com/RushaliUddin/Smart-Traffic-Monitoring"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/aoop.png" alt="Addicate mental health app concept" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Addicate</h3>
+            <p class="entry-meta">Product · Prototype</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Designed "Addicate", an addiction recovery and wellness assistant focused on daily guidance and cognitive well-being.</li>
+              <li>Implemented core Java concepts: networking, file IO, interfaces/abstract classes, DB interaction.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid"
+              href="https://github.com/RushaliUddin/Smart-Traffic-Monitoring"
+              target="_blank" rel="noopener noreferrer">Report</a>
+            <a class="btn btn-ghost"
+              href="https://github.com/RushaliUddin/Ocean-Debris-Detection"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/sad.jpg" alt="Sukoshi marketplace concept" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Sukoshi</h3>
+            <p class="entry-meta">Product · Prototype</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Planned a platform for small startups featuring product listings, sponsorships, ratings, role-based access, and educational video content.</li>
+              <li>Modeled a distributed backend architecture for scalability, safety, and fraud prevention.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid"
+              href="https://github.com/RushaliUddin/Smart-Traffic-Monitoring"
+              target="_blank" rel="noopener noreferrer">Report</a>
+            <a class="btn btn-ghost"
+              href="https://github.com/RushaliUddin/Ocean-Debris-Detection"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/micro.png" alt="Smart Suburb IoT prototype" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Smart Suburb</h3>
+            <p class="entry-meta">Embedded Systems · Prototype</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Implemented microcontroller-based street lights, smart dustbins, drainage monitoring, and weather reporting using Arduino and ESP32.</li>
+              <li>Added smart parking, traffic control, and piezoelectric energy harvesting for sustainability.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid"
+              href="https://github.com/RushaliUddin/Smart-Traffic-Monitoring"
+              target="_blank" rel="noopener noreferrer">Report</a>
+            <a class="btn btn-ghost"
+              href="https://github.com/RushaliUddin/Ocean-Debris-Detection"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/electronics.jpg" alt="Smart Industry System hardware mockup" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Smart Industry System</h3>
+            <p class="entry-meta">Embedded Safety · Prototype</p>
+          </div>
+          <div class="entry-desc">
+            <ul class="bullet-list">
+              <li>Developed an Arduino-based industrial automation system with RFID access control, ultrasonic disinfection, and automated attendance tracking.</li>
+              <li>Integrated piezoelectric energy and LDR-triggered lighting for reduced electricity usage in high-traffic zones.</li>
+            </ul>
+          </div>
+          <div class="entry-actions">
+            <a class="btn btn-solid"
+              href="https://github.com/RushaliUddin/Smart-Traffic-Monitoring"
+              target="_blank" rel="noopener noreferrer">Report</a>
+            <a class="btn btn-ghost"
+              href="https://github.com/RushaliUddin/Ocean-Debris-Detection"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== TECHNICAL SKILLS ====== -->
+  <section id="technical-skills" class="section-wrapper">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="card card-outer">
+      <div class="card-inner">
+        <ul class="flat-list">
+          <li>
+            <strong>Programming:</strong> C, C++, Java, Python, JavaScript, PHP, SQL, Solidity
+          </li>
+          <li>
+            <strong>Machine Learning:</strong> PyTorch, TensorFlow, Scikit-Learn, Matplotlib, NumPy, Pandas, NLTK, HuggingFace
+          </li>
+          <li>
+            <strong>Frameworks / Libraries:</strong> React.js, Node.js, Spring Boot, FastAPI, Firebase
+          </li>
+          <li>
+            <strong>Research Skills:</strong> LaTeX, Data Visualization, Data Interpretation, Methodology Formulation
+          </li>
+          <li>
+            <strong>DevOps Tools:</strong> Git, GitHub, Docker
+          </li>
+          <li>
+            <strong>Soft Skills:</strong> Communication, Leadership, Design Thinking, Public Speaking, Team Support
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== AWARDS ====== -->
+  <section id="awards" class="section-wrapper">
+    <h2 class="section-title">Awards</h2>
+
+    <div class="card card-outer">
+      <div class="card-inner">
+        <ul class="flat-list">
+          <li><strong>1st Runner-Up:</strong> Database Management Systems Laboratory Project · Project Show Fall 2021</li>
+          <li><strong>1st Runner-Up:</strong> Electronics Laboratory Project · Project Show Summer 2022</li>
+          <li><strong>2nd Runner-Up:</strong> Advanced Object-Oriented Programming Laboratory · Project Show Fall 2021</li>
+          <li><strong>2nd Runner-Up:</strong> Final Year Design Project Poster Presentation · Project Show Spring 2023</li>
+          <li><strong>UIU Scholarship:</strong> Awarded 9 times for academic performance</li>
+          <li><strong>Nishimura Award for Academic Excellency:</strong> 3×</li>
+          <li><strong>Academic Award for Academic Excellency:</strong> 3×</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== COURSES / MENTORSHIP ====== -->
+  <section id="courses-mentorship" class="section-wrapper">
+    <h2 class="section-title">Courses Taken & Mentorship</h2>
+
+    <div class="card-grid-two">
+
+      <div class="card card-outer">
+        <div class="entry-header">
+          <h3 class="card-heading">Courses Taken</h3>
+        </div>
+        <div class="card-inner">
+          <ul class="bullet-list">
+            <li>Structured Programming Language Laboratory</li>
+            <li>Microprocessors and Microcontrollers Laboratory</li>
+            <li>System Design and Analysis Laboratory</li>
+            <li>Digital Logic Design Laboratory</li>
+            <li>Theory of Computation</li>
+            <li>Programming for Data Science</li>
+            <li>Artificial Intelligence Laboratory</li>
+            <li>Introduction to Computer Systems Laboratory</li>
+            <li>Object Oriented Programming Laboratory</li>
+            <li>Data Structures and Algorithms Laboratory</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card card-outer">
+        <div class="entry-header">
+          <h3 class="card-heading">Mentorship & Leadership</h3>
+        </div>
+        <div class="card-inner">
+          <ul class="bullet-list">
+            <li>Supervised 12 teams for a project competition</li>
+            <li>Served as a faculty judge for Project Showcase Summer 2024</li>
+            <li>Supervised 6 course-based research papers</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS SUPERVISED ====== -->
+  <section id="projects-supervised" class="section-wrapper">
+    <h2 class="section-title">Projects Supervised</h2>
+
+    <div class="card-stack">
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/agri.png" alt="Agri-Rover autonomous farming robot" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Agri-Rover: A Smart Self-Operating Farming Robot for Efficient Agriculture
+            </h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              Agri-Rover integrates IoT sensors, path-planning, and autonomous navigation for precision farming.
+              It enables automated soil moisture detection, irrigation control, and crop monitoring for agricultural efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/hellbot.png" alt="HELLBOT hazardous environment robot" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">HELLBOT</h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              HELLBOT is a robotic safety platform for hazardous environments, integrating sensing and communication
+              modules for remote operation, emergency response, and real-time monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/g2.png" alt="Optimized Reactor Workbench simulation UI" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">Optimized Reactor Workbench</h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              Guided students to develop an interactive simulation for chemical reactor optimization, combining
+              temperature regulation and flow-rate analytics in a Python-based interface.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/tame.png" alt="Automated flood dam management concept" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Taming the Tides: Automated Anti-Flood Dam Management System
+            </h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              A real-time, sensor-driven embedded control system that predicts water level changes and actuates dam
+              gates to mitigate flooding during heavy rainfall.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/neocura.jpg" alt="NeoCura elderly care assistant robot" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              NeoCura: Personal Assistant Robot for Elderly People
+            </h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              A robotic assistant concept combining voice interaction, navigation, and health monitoring to support
+              elderly individuals with reminders, fall detection, and emergency alerts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/care.png" alt="CareSerenity orphan support platform design" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              CareSerenity: An Orphan Helping System
+            </h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              A web platform connecting orphanages with donors, volunteers, and mentors. Focus on transparency in
+              donation flow and emotional support using suggestion modules.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-media">
+          <img src="./assets/ahhar.png" alt="AHAAR food redistribution system mockup" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <h3 class="entry-title">AHAAR</h3>
+            <p class="entry-meta">Supervision · Course-Based Project</p>
+          </div>
+          <div class="entry-desc">
+            <p class="body-text">
+              An AI-assisted food redistribution platform linking restaurants and donors to NGOs/shelters. Includes
+              geolocation-based matching, food-safety scoring, and delivery logistics.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section-wrapper">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-info-upper-container">
+
+      <div class="contact-card">
+        <img src="./assets/email.png" alt="" class="contact-icon" />
+        <a class="contact-link" href="mailto:rushalisharif@gmail.com">rushalisharif@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <img src="./assets/ins.png" alt="" class="contact-icon" />
+        <a class="contact-link" href="https://www.instagram.com/YOUR_USERNAME/" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <img src="./assets/fb2.png" alt="" class="contact-icon" />
+        <a class="contact-link" href="https://www.facebook.com/YOUR_USERNAME/" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <img src="./assets/linkedin.png" alt="" class="contact-icon" />
+        <a class="contact-link" href="https://www.linkedin.com/in/rushali-uddin/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="footer-overlay"></div>
+
+    <p class="footer-text">© 2025 Rushali Sharif Uddin. All Rights Reserved.</p>
+
+    <ul class="footer-links">
+      <li><a class="footer-link" href="#profile">About</a></li>
+      <li><a class="footer-link" href="#experience">Experience</a></li>
+      <li><a class="footer-link" href="#projects">Projects</a></li>
+      <li><a class="footer-link" href="#contact">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
